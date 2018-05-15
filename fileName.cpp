@@ -26,16 +26,16 @@ int main()
   string s;
   cin>>s;
   i=0,count=0;
-  while(i<=s.size()-3)
+  while(s.size()>=3 && i<=s.size()-3)
   {
      if(s[i]=='x' && s[i+1]=='x' && s[i+2]=='x')
      {
-        // cout<<s[i]<<endl;
+      
       s.erase(i,1);count++;
      }
      else
       i++;
-    cout<<s.size()-3<<endl;
+  
   }
   cout<<count<<endl;
 }
